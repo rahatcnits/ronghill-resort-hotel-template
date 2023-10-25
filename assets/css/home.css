@@ -1,0 +1,31 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Metamorphous&family=Tilt+Neon&display=swap");
+
+@font-face {
+  font-family: Typographica;
+  src: url(../fonts/typographica/Typographica-Blp5.ttf);
+}
+/* fonts */
+
+/* universal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary_font: "Typographica";
+  --secondary_font: "Metamorphous";
+  --primary_gradient: linear-gradient(
+    180deg,
+    #000 20.83%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+  --primary_color: #d7a469;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* universal */
