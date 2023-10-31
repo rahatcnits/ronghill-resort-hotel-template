@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ronghill Resort & Hotel - Home</title>
 
@@ -25,8 +26,173 @@
   <body>
     <!-- Hero Start -->
     <section id="hero">
-      <h1>ENJOY YOUR HOLIDAYS WITH A LUXURY EXPERIENCE</h1>
+      <!-- Navbar Start -->
+      <nav id="navbar">
+        <div class="container">
+          <div class="navbar_wrapper">
+            <a href="./index.html">
+              <img class="logo" src="./assets/images/logo.png" alt="" />
+            </a>
+
+            <span class="nav_open_btn">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+
+            <ul class="nav_items">
+              <span class="nav_close_btn">
+                <i class="fa-solid fa-xmark"></i>
+              </span>
+              <li class="nav_item">
+                <a href="./index.html" class="nav_link active">HOME</a>
+              </li>
+              <li class="nav_item">
+                <a href="./index.html" class="nav_link">FACILITIES</a>
+              </li>
+              <li class="nav_item">
+                <a href="./index.html" class="nav_link">ROOMS</a>
+              </li>
+              <li class="nav_item">
+                <a href="./index.html" class="nav_link">RESTAURANT</a>
+              </li>
+              <li class="nav_item">
+                <a href="./index.html" class="nav_link"
+                  >PAGES <i class="fa-solid fa-chevron-down"></i
+                ></a>
+              </li>
+              <li class="nav_item">
+                <a href="./index.html" class="nav_link">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Slider Start -->
+      <div class="img_slider">
+        <div class="slider">
+          <div class="img_container">
+            <img src="./assets/images/home_hero_img_2.png" alt="" />
+            <img src="./assets/images/home_hero_img.png" alt="" />
+            <img src="./assets/images/home_hero_img_3.png" alt="" />
+          </div>
+
+          <!-- Hero Content Start -->
+          <div class="container">
+            <div class="hero_content">
+              <span class="hero_sub_header">WELCOME TO RONG HILL</span>
+              <h1 class="hero_header">
+                ENJOY YOUR HOLIDAYS WITH <br />
+                A LUXURY EXPERIENCE
+              </h1>
+
+              <div class="hero_btn">
+                <a href="#"
+                  >TAKE A TOUR
+                  <span
+                    ><img
+                      class="hero_btn_icon"
+                      src="./assets/icons/arrow_icon.svg"
+                      alt=""
+                  /></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Content End -->
+        </div>
+
+        <div class="pagination">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- Slider End -->
     </section>
     <!-- Hero End -->
+
+    <!-- <span>hello</span> -->
+
+    <!-- Reservetion Start -->
+    <div id="reservetion">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-10">
+            <div class="reservetion_wrapper">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="reservetion_content">
+                        <h3>Check In</h3>
+                        <label for="date_in">Date:</label>
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="reservetion_content">
+                        <h3>Check Out</h3>
+                        <label for="date_in">Date:</label>
+                        <input type="text" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="reservetion_content">
+                        <div class="select_box">
+                          <div class="select">
+                            <span>Rooms</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+
+                          <div class="options_list">
+                            <div class="option">DELUXE KING SUITE</div>
+                            <div class="option">FAMILY ROOM</div>
+                            <div class="option">SIGNLE ROOM</div>
+                            <div class="option">HONYMOON</div>
+                            <div class="option">DOUBLE ROOM</div>
+                            <div class="option">ROOM IN NATURE</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="reservetion_content">
+                        <div class="select_box">
+                          <div class="select">
+                            <span>Rooms</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+
+                          <div class="options_list">
+                            <div class="option">DELUXE KING SUITE</div>
+                            <div class="option">FAMILY ROOM</div>
+                            <div class="option">SIGNLE ROOM</div>
+                            <div class="option">HONYMOON</div>
+                            <div class="option">DOUBLE ROOM</div>
+                            <div class="option">ROOM IN NATURE</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Reservetion End -->
+
+    <!-- Script -->
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <!-- Script -->
   </body>
 </html>

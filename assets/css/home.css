@@ -29,3 +29,145 @@
 }
 
 /* universal */
+
+/* hero start */
+
+.hero_content {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_content .hero_sub_header {
+  font-family: var(--secondary_font);
+  padding: 5px 20px;
+  color: var(--white);
+  font-size: 1.2em;
+  display: inline-block;
+  border-top: 4px solid var(--primary_color);
+  border-bottom: 4px solid var(--primary_color);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.hero_content .hero_header {
+  font-family: var(--primary_font);
+  font-size: 4em;
+  color: var(--white);
+  line-height: 90px;
+  word-spacing: 10px;
+}
+
+.hero_content .hero_btn {
+  margin-top: 30px;
+}
+
+.hero_content .hero_btn a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: var(--secondary_font);
+  color: var(--white);
+  background-color: var(--primary_color);
+  width: 220px;
+  display: inline-block;
+  text-align: center;
+  padding: 13px 0;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.5s;
+}
+
+.hero_content .hero_btn a .hero_btn_icon {
+  width: 22px;
+  margin-left: 4px;
+  transition: 0.5s;
+}
+
+.hero_content .hero_btn a:hover .hero_btn_icon {
+  transform: translateX(6px);
+}
+
+/* hero end */
+
+/* Reservetion Start */
+
+#reservetion {
+  margin-top: -100px;
+  z-index: 9999999 !important;
+}
+
+.reservetion_wrapper {
+  background-color: var(--black);
+  padding: 25px 40px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.reservetion_content h3 {
+  text-align: center;
+  font-size: 1.6em;
+  font-family: var(--secondary_font);
+  color: var(--white);
+}
+
+.reservetion_content label {
+  font-family: var(--secondary_font);
+  font-size: 1em;
+  color: var(--white);
+}
+
+.select_box {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.select {
+  color: var(--white);
+  font-family: var(--secondary_font);
+  text-align: center;
+  font-size: 1.6em;
+  user-select: none;
+}
+
+.select i {
+  color: var(--primary_color);
+  margin-left: 4px;
+}
+
+.options_list {
+  position: absolute;
+  width: 100%;
+  background-color: var(--white);
+  border: 1px solid #c7812f;
+  border-radius: 4px;
+  text-align: center;
+  font-family: var(--secondary_font);
+  font-size: 1em;
+  color: var(--black);
+  overflow-y: auto;
+  display: none;
+}
+
+.options_list.active {
+  display: block;
+}
+
+.options_list .option {
+  padding: 8px 0;
+  transition: 0.5s;
+}
+
+.options_list .option.active,
+.options_list .option:hover {
+  background-color: #c7812f;
+  color: var(--white);
+}
+
+/* Reservetion End */
