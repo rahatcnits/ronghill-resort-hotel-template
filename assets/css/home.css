@@ -59,7 +59,7 @@
   font-size: 4em;
   color: var(--white);
   line-height: 90px;
-  word-spacing: 10px;
+  word-spacing: 18px;
 }
 
 .hero_content .hero_btn {
@@ -168,6 +168,20 @@
 .options_list .option:hover {
   background-color: #c7812f;
   color: var(--white);
+}
+
+.select_text {
+  text-align: center;
+  color: var(--white);
+  font-family: var(--secondary_font);
+  font-size: 1em;
+  line-height: 15px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.select_text img {
+  width: 100%;
 }
 
 /* Reservetion End */
