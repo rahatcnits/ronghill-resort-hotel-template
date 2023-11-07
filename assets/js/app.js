@@ -45,3 +45,22 @@ childOptions.forEach((option) => {
     childSelect.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
   });
 });
+
+// Counters
+const counterNumDisplays = document.querySelectorAll("#counter_text");
+let countInterval = 4000;
+
+counterNumDisplays.forEach((counterNumDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(counterNumDisplay.getAttribute("data-val"));
+  let duration = Math.floor(countInterval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    counterNumDisplay.textContent = startValue + "+";
+    if (startValue === endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+
+  console.log(endValue);
+});
