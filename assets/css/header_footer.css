@@ -189,9 +189,10 @@
     display: block;
     position: absolute;
     top: 0;
+    bottom: 0;
     right: -100%;
     width: 300px;
-    height: 100vh;
+    height: 110vh;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 999999 !important;
     transition: all 0.5s;
