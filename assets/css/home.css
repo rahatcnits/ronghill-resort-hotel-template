@@ -200,6 +200,7 @@
 .about_header h1 {
   font-family: var(--primary_font);
   font-size: 3em;
+  word-spacing: 3px;
   background: var(--primary_gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -224,6 +225,7 @@
 .about_content h2 {
   font-family: var(--primary_font);
   font-size: 2em;
+  word-spacing: 3px;
   background: var(--primary_gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -261,7 +263,7 @@
   font-size: 1em;
   border-radius: 8px 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s;
+  transition: all 0.8s;
 }
 
 .about_btn a:hover {
@@ -290,6 +292,7 @@
 .service_header h1 {
   font-family: var(--primary_font);
   font-size: 3em;
+  word-spacing: 3px;
   background: var(--primary_gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -346,6 +349,7 @@
 .service_card h1 {
   font-family: var(--primary_font);
   font-size: 2em;
+  word-spacing: 3px;
   background: var(--primary_gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -412,9 +416,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .service_card h1 {
-    /* font-size: 1.6em; */
-  }
 }
 
 /* Service End */
@@ -435,6 +436,7 @@
 .choose_room_header h1 {
   font-family: var(--primary_font);
   font-size: 3em;
+  word-spacing: 3px;
   background: var(--primary_gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -629,7 +631,12 @@
   font-size: 1em;
   border-radius: 8px 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s;
+  transition: all 0.8s;
+}
+
+.choose_room_card_price_btn a:hover {
+  background-color: var(--primary_color);
+  color: var(--white);
 }
 
 .choose_room_btn {
@@ -651,7 +658,7 @@
   font-size: 1em;
   border-radius: 8px 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s;
+  transition: all 0.8s;
 }
 
 .choose_room_btn a:hover {
@@ -708,6 +715,11 @@
   border-radius: 50%;
   margin: auto;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.video_play_btn:hover {
+  background-color: var(--primary_color);
 }
 
 .video_play_btn i {
@@ -744,3 +756,219 @@
 }
 
 /* Counter End */
+
+/* Gallery Start */
+
+#gallery {
+  padding: 0 0 100px;
+}
+
+.gallery_header h3 {
+  font-family: var(--secondary_font);
+  font-size: 1.4em;
+  color: var(--black);
+  text-align: center;
+}
+
+.gallery_header h1 {
+  font-family: var(--primary_font);
+  font-size: 3em;
+  word-spacing: 3px;
+  background: var(--primary_gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gallery_header .header_shape {
+  width: 230px;
+  margin: 0 auto 20px;
+}
+
+.gallery_header .header_shape img {
+  width: 100%;
+}
+
+.gallery_cards {
+  position: relative;
+  border-radius: 10px 0;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.gallery_cards img {
+  width: 100%;
+  border-radius: 10px 0;
+}
+
+.gallery_cards:hover .gallery_card_overlay {
+  opacity: 1;
+  user-select: all;
+  pointer-events: all;
+}
+
+.gallery_card_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.gallery_card_btn {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--primary_color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.gallery_card_btn:hover {
+  background-color: var(--primary_color);
+}
+
+.gallery_card_btn a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.8em;
+}
+
+.gallery_btn {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.gallery_btn a {
+  text-decoration: none;
+  display: inline-block;
+  width: 160px;
+  border-top: 3px solid var(--primary_color);
+  border-bottom: 3px solid var(--primary_color);
+  background-color: var(--white);
+  padding: 9px 0;
+  color: var(--black);
+  text-align: center;
+  font-family: var(--secondary_font);
+  font-size: 1em;
+  border-radius: 8px 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.8s;
+}
+
+.gallery_btn a:hover {
+  background-color: var(--primary_color);
+  color: var(--white);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+}
+
+/* Gallery End */
+
+/* Blog Start */
+
+#blog {
+  padding: 0 0 100px;
+}
+
+.blog_header h3 {
+  font-family: var(--secondary_font);
+  font-size: 1.4em;
+  color: var(--black);
+  text-align: center;
+}
+
+.blog_header h1 {
+  font-family: var(--primary_font);
+  font-size: 3em;
+  word-spacing: 3px;
+  background: var(--primary_gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.blog_header .header_shape {
+  width: 230px;
+  margin: 0 auto 20px;
+}
+
+.blog_header .header_shape img {
+  width: 100%;
+}
+
+.blog_content {
+  margin-top: 30px;
+}
+
+.blog_content img {
+  width: 100%;
+}
+
+.blog_content h4 {
+  font-size: 1.2em;
+  font-family: var(--secondary_font);
+  color: var(--primary_color);
+}
+
+.blog_content h2 {
+  font-size: 2em;
+  font-family: var(--primary_font);
+  word-spacing: 4px;
+  background: var(--primary_gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 30px 0;
+}
+
+.blog_content p {
+  font-size: 1em;
+  font-family: var(--secondary_font);
+  color: var(--primary_color);
+}
+
+.blog_btn {
+  margin-top: 25px;
+}
+
+.blog_btn a {
+  text-decoration: none;
+  display: inline-block;
+  width: 160px;
+  border-left: 3px solid var(--primary_color);
+  border-right: 3px solid var(--primary_color);
+  background-color: var(--white);
+  padding: 9px 0;
+  color: var(--black);
+  text-align: center;
+  font-family: var(--secondary_font);
+  font-size: 1em;
+  border-radius: 8px 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.8s;
+}
+
+.blog_btn a:hover {
+  background-color: var(--primary_color);
+  color: var(--white);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+}
+
+/* Blog End */
