@@ -110,20 +110,20 @@
 
 /* hero end */
 
-/* Blog Start */
+/* Facilities Start */
 
-#blog {
+#facilities {
   padding: 100px 0;
 }
 
-.blog_header h3 {
+.facilities_header h3 {
   font-family: var(--secondary_font);
   font-size: 1.4em;
   color: var(--black);
   text-align: center;
 }
 
-.blog_header h1 {
+.facilities_header h1 {
   font-family: var(--primary_font);
   font-size: 3em;
   word-spacing: 3px;
@@ -134,30 +134,30 @@
   margin-top: 20px;
 }
 
-.blog_header .header_shape {
+.facilities_header .header_shape {
   width: 230px;
   margin: 0 auto 20px;
 }
 
-.blog_header .header_shape img {
+.facilities_header .header_shape img {
   width: 100%;
 }
 
-.blog_content {
+.facilities_content {
   margin-top: 30px;
 }
 
-.blog_content img {
+.facilities_content img {
   width: 100%;
 }
 
-.blog_content h4 {
+.facilities_content h4 {
   font-size: 1.2em;
   font-family: var(--secondary_font);
   color: var(--primary_color);
 }
 
-.blog_content h2 {
+.facilities_content h2 {
   font-size: 2em;
   font-family: var(--primary_font);
   word-spacing: 4px;
@@ -167,17 +167,17 @@
   margin: 30px 0;
 }
 
-.blog_content p {
+.facilities_content p {
   font-size: 1em;
   font-family: var(--secondary_font);
   color: var(--primary_color);
 }
 
-.blog_btn {
+.facilities_btn {
   margin-top: 25px;
 }
 
-.blog_btn a {
+.facilities_btn a {
   text-decoration: none;
   display: inline-block;
   width: 160px;
@@ -194,7 +194,7 @@
   transition: all 0.8s;
 }
 
-.blog_btn a:hover {
+.facilities_btn a:hover {
   background-color: var(--primary_color);
   color: var(--white);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1),
@@ -203,23 +203,23 @@
 }
 
 @media screen and (max-width: 990px) {
-  .blog_header h3 {
+  .facilities_header h3 {
     font-size: 1.1em;
   }
 
-  .blog_header h1 {
+  .facilities_header h1 {
     font-size: 2em;
     margin-top: 10px;
   }
 
-  .blog_header .header_shape {
+  .facilities_header .header_shape {
     width: 180px;
     margin: 0 auto 0;
   }
 
-  .blog_content h2 {
+  .facilities_content h2 {
     margin: 20px 0;
   }
 }
 
-/* Blog End */
+/* Facilities End */

@@ -91,14 +91,14 @@
 
 /* hero end */
 
-/* Reservetion Start */
+/* Reservation Start */
 
-#reservetion {
+#reservation {
   margin-top: -100px;
   z-index: 9999999 !important;
 }
 
-.reservetion_wrapper {
+.reservation_wrapper {
   background-color: var(--black);
   padding: 25px 40px;
   border-top-left-radius: 6px;
@@ -107,14 +107,14 @@
   border-bottom-right-radius: 20px;
 }
 
-.reservetion_content h3 {
+.reservation_content h3 {
   text-align: center;
   font-size: 1.6em;
   font-family: var(--secondary_font);
   color: var(--white);
 }
 
-.reservetion_content label {
+.reservation_content label {
   font-family: var(--secondary_font);
   font-size: 1em;
   color: var(--white);
@@ -182,7 +182,7 @@
   width: 100%;
 }
 
-/* Reservetion End */
+/* Reservation End */
 
 /* About Start */
 
