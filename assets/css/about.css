@@ -258,6 +258,118 @@
   width: 100%;
 }
 
+.customer_review_desc {
+  font-family: var(--secondary_font);
+  text-align: center;
+  color: var(--primary_color);
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.customer_review_img img {
+  width: 100%;
+  border-radius: 12px 0 12px 0;
+  -webkit-border-radius: 12px 0 12px 0;
+  -moz-border-radius: 12px 0 12px 0;
+  -ms-border-radius: 12px 0 12px 0;
+  -o-border-radius: 12px 0 12px 0;
+}
+
+/* Chart */
+
+.customer_review_chart {
+  margin-top: 50px;
+}
+
+@property --p {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+.pie {
+  --p: 20;
+  --b: 22px;
+  --c: #d7a469;
+  --w: 100%;
+
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  text-align: center;
+  place-content: center;
+}
+
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b)
+      var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+
+.pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg))
+    translateY(calc(50% - var(--w) / 2));
+}
+
+.animate {
+  animation: p 1s 0.5s both;
+}
+
+.no-round:before {
+  background-size: 0 0, auto;
+}
+
+.no-round:after {
+  content: none;
+}
+
+@keyframes p {
+  from {
+    --p: 0;
+  }
+}
+
+.pie p {
+  font-family: var(--secondary_font);
+  margin-bottom: 0;
+}
+
+.pie p:first-child {
+  background: var(--primary_gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.pie p:last-child {
+  color: var(--primary_color);
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
 /* Customer Review End */
 
 /* Video Start*/
