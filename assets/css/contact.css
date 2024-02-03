@@ -1,0 +1,236 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Metamorphous&family=Tilt+Neon&display=swap");
+
+@font-face {
+  font-family: Typographica;
+  src: url(../fonts/typographica/Typographica-Blp5.ttf);
+}
+/* fonts */
+
+/* universal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary_font: "Typographica";
+  --secondary_font: "Metamorphous";
+  --primary_gradient: linear-gradient(
+    180deg,
+    #000 20.83%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+  --primary_color: #d7a469;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* universal */
+
+/* hero start */
+
+#hero {
+  height: 80vh;
+  background: url(../images/contact_hero_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero_content_wrapper {
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_content .hero_header {
+  font-family: var(--primary_font);
+  font-size: 4em;
+  color: var(--white);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  white-space: 10px;
+}
+
+.hero_content .hero_sub_header {
+  font-family: var(--primary_font);
+  font-size: 1.8em;
+  color: var(--white);
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.hero_shape {
+  position: relative;
+  width: 420px;
+  height: 5px;
+  background-color: var(--primary_color);
+  margin: auto;
+}
+
+.hero_shape::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 15px;
+  height: 15px;
+  background-color: var(--primary_color);
+}
+
+.hero_shape::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 15px;
+  height: 15px;
+  background-color: var(--primary_color);
+}
+
+@media screen and (max-width: 990px) {
+  .hero_content .hero_header {
+    font-size: 3em;
+  }
+
+  .hero_content .hero_sub_header {
+    font-size: 1.6em;
+    margin-top: 15px;
+  }
+
+  .hero_shape {
+    width: 250px;
+  }
+}
+
+/* Hero End */
+
+/* About Start */
+
+#contact {
+  padding: 100px 0;
+}
+
+.contact_header h3 {
+  font-family: var(--secondary_font);
+  font-size: 1.4em;
+  color: var(--black);
+  text-align: center;
+}
+
+.contact_header h1 {
+  font-family: var(--primary_font);
+  font-size: 3em;
+  word-spacing: 3px;
+  background: var(--primary_gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact_header .header_shape {
+  width: 230px;
+  margin: 0 auto 50px;
+}
+
+.contact_header .header_shape img {
+  width: 100%;
+}
+
+.contact_wrapper {
+  border: 1px solid var(--primary_color);
+  padding: 20px 20px 60px 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.contact_item {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.contact_item_icon {
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--primary_color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.contact_item_icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.contact_item h2 {
+  font-family: var(--primary_font);
+  font-size: 1.6em;
+  font-weight: 700;
+  background: var(--primary_gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  margin: 15px 0 40px;
+}
+
+.contact_item h2 span {
+  font-family: sans-serif;
+  background: var(--primary_gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact_item p {
+  margin-bottom: 20px;
+}
+
+.contact_item p:last-child {
+  margin-bottom: 0;
+}
+
+.contact_item p a {
+  color: var(--black);
+  text-decoration: none;
+  font-family: var(--secondary_font);
+  font-size: 1em;
+}
+
+.contact_item p a span {
+  color: var(--primary_color);
+}
+
+@media screen and (max-width: 990px) {
+  .contact_header h3 {
+    font-size: 1.1em;
+  }
+
+  .contact_header h1 {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+
+  .contact_header .header_shape {
+    width: 180px;
+    margin: 0 auto 0px;
+  }
+}
+
+/* About End */

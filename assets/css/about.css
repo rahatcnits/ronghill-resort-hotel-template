@@ -372,6 +372,151 @@
 
 /* Customer Review End */
 
+/* Leadership Start */
+
+#leadership {
+  padding-bottom: 100px;
+}
+
+.leadership_header h1 {
+  font-family: var(--primary_font);
+  font-size: 3em;
+  word-spacing: 3px;
+  background: var(--primary_gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.leadership_header .header_shape {
+  width: 230px;
+  margin: 0 auto 50px;
+}
+
+.leadership_header .header_shape img {
+  width: 100%;
+}
+
+.leadership_card {
+  width: 100%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  margin-top: 35px;
+  border-radius: 12px 0;
+}
+
+.leadership_card img {
+  width: 100%;
+}
+
+.leadership_card_border_right,
+.leadership_card_border_left {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  z-index: 99 !important;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+
+.leadership_card_border_right {
+  top: 0;
+  right: 0;
+  border-right: 4px solid var(--primary_color);
+}
+
+.leadership_card_border_left {
+  bottom: 0;
+  left: 0;
+  border-left: 4px solid var(--primary_color);
+}
+
+.leadership_card:hover .leadership_card_border_right,
+.leadership_card:hover .leadership_card_border_left {
+  height: 100%;
+  border-radius: 12px 0;
+}
+
+.leadership_card .leadership_card_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 0;
+}
+
+.leadership_card_overlay {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  z-index: 99 !important;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+  -moz-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  -o-transform: translateY(30px);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  color: var(--white);
+}
+
+.leadership_card_overlay h2 {
+  font-family: var(--primary_font);
+  letter-spacing: 2px;
+  font-size: 1.8em;
+}
+
+.leadership_card_overlay p {
+  font-family: var(--secondary_font);
+  font-size: 1em;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.leadership_card:hover .leadership_card_overlay {
+  opacity: 1;
+  user-select: auto;
+  pointer-events: all;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.leadership_card_overlay_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  opacity: 0;
+  border-radius: 12px 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.leadership_card:hover .leadership_card_overlay_bg {
+  opacity: 1;
+}
+
+/* Leadership End */
+
 /* Video Start*/
 
 #video {
