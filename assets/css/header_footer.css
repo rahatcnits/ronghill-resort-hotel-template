@@ -30,63 +30,6 @@
 
 /* universal */
 
-/* Hero Start  */
-
-.slider {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  z-index: -1;
-}
-
-.img_container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
-  transition: 1s ease-in-out;
-  z-index: -1;
-}
-
-.img_container img {
-  width: 100vw;
-  height: 100%;
-  user-select: none;
-}
-
-.pagination {
-  position: absolute;
-  top: 45%;
-  right: 80px;
-  transform: translateY(-45%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  background-color: #d7a469;
-  width: 28px;
-  height: 100px;
-  border-radius: 30px;
-}
-
-.pagination span {
-  width: 6px;
-  height: 6px;
-  background: var(--white);
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  z-index: 999 !important;
-}
-
-.pagination span.active {
-  outline: 1px solid var(--white);
-  outline-offset: 4px;
-}
-
 /* Navbar Start */
 
 #navbar {

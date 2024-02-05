@@ -27,18 +27,10 @@
     <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.css" />
     <!-- Font Awesome Link -->
 
-    <!-- owl carousel -->
+    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
 
@@ -87,47 +79,90 @@
       </nav>
       <!-- Navbar End -->
 
-      <!-- Slider Start -->
-      <div class="img_slider">
-        <div class="slider">
-          <div class="img_container">
-            <img src="./assets/images/home_hero_img_2.png" alt="" />
+      <!-- Hero Slider -->
+      <div class="hero_shape">
+        <img src="./assets/images/home_hero_shape.svg" alt="" />
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
             <img src="./assets/images/home_hero_img.png" alt="" />
-            <img src="./assets/images/home_hero_img_3.png" alt="" />
-          </div>
 
-          <!-- Hero Content Start -->
-          <div class="container">
-            <div class="hero_content">
-              <span class="hero_sub_header">WELCOME TO RONG HILL</span>
-              <h1 class="hero_header">
-                ENJOY YOUR HOLIDAYS WITH <br />
-                A LUXURY EXPERIENCE
-              </h1>
+            <div class="container">
+              <div class="hero_content">
+                <span class="hero_sub_header">WELCOME TO RONG HILL</span>
+                <h1 class="hero_header">
+                  ENJOY YOUR HOLIDAYS WITH <br />
+                  A LUXURY EXPERIENCE
+                </h1>
 
-              <div class="hero_btn">
-                <a href="#"
-                  >TAKE A TOUR
-                  <span
-                    ><img
-                      class="hero_btn_icon"
-                      src="./assets/icons/arrow_icon.svg"
-                      alt=""
-                  /></span>
-                </a>
+                <div class="hero_btn">
+                  <a href="#"
+                    >TAKE A TOUR
+                    <span
+                      ><img
+                        class="hero_btn_icon"
+                        src="./assets/icons/arrow_icon.svg"
+                        alt=""
+                    /></span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <!-- Hero Content End -->
-        </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/home_hero_img_2.png" alt="" />
 
-        <div class="pagination">
-          <span class="active"></span>
-          <span></span>
-          <span></span>
+            <div class="container">
+              <div class="hero_content">
+                <span class="hero_sub_header">WELCOME TO RONG HILL</span>
+                <h1 class="hero_header">
+                  MOST RELAXING PLACE <br />
+                  IN THE PERFECT LOCATION
+                </h1>
+
+                <div class="hero_btn">
+                  <a href="#"
+                    >TAKE A TOUR
+                    <span
+                      ><img
+                        class="hero_btn_icon"
+                        src="./assets/icons/arrow_icon.svg"
+                        alt=""
+                    /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/home_hero_img_3.png" alt="" />
+
+            <div class="container">
+              <div class="hero_content">
+                <span class="hero_sub_header">WELCOME TO RONG HILL</span>
+                <h1 class="hero_header">
+                  SPEND QUALITY HOLIDAYS <br />
+                  WITH US
+                </h1>
+
+                <div class="hero_btn">
+                  <a href="#"
+                    >TAKE A TOUR
+                    <span
+                      ><img
+                        class="hero_btn_icon"
+                        src="./assets/icons/arrow_icon.svg"
+                        alt=""
+                    /></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- Slider End -->
     </section>
     <!-- Hero End -->
 
@@ -1580,12 +1615,11 @@
     <!-- Script -->
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/app.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/carousel.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <script src="./assets/js/testimonial.js"></script>
     <!-- Script -->
   </body>
 </html>
