@@ -120,6 +120,145 @@
   display: none;
 }
 
+.menu-item #dropdown {
+  position: relative;
+}
+
+.menu-item #dropdown:hover .dropdown_items {
+  display: block;
+}
+
+/* dropdown start */
+
+#dropdown_menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#tm:checked + .main-menu {
+  display: block;
+}
+
+.main-menu a {
+  transition: 0.4s !important;
+  cursor: pointer;
+}
+
+.main-menu a:hover {
+  color: var(--header-color) !important;
+}
+
+#dropdown_menu input[type="checkbox"],
+#dropdown_menu ul span.drop-icon {
+  display: none;
+}
+
+#dropdown_menu .sub-menu {
+  width: 200px;
+  background: #f8f9fa;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+  margin: 0 1em;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+#dropdown_menu .sub-menu li:last-child {
+  border-width: 0;
+}
+
+#dropdown_menu li,
+#toggle-menu,
+#dropdown_menu a {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: var(--text-font);
+  color: rgba(0, 0, 0, 0.853);
+}
+
+#dropdown_menu a {
+  transition: all 0.125s ease-in-out;
+  -webkit-transition: all 0.125s ease-in-out;
+}
+
+#dropdown_menu .sub-menu {
+  display: none;
+}
+
+#dropdown_menu .sub-menu li {
+  padding: 5px 0;
+}
+
+#dropdown_menu .sub-menu li a {
+  font-size: 1em;
+}
+
+#dropdown_menu input[type="checkbox"]:checked + .sub-menu {
+  display: block;
+}
+
+/* #toggle-menu .drop-icon,
+  #dropdown_menu li label.drop-icon {
+    position: absolute;
+    right: 1.5em;
+    top: 1.25em;
+  } */
+
+#dropdown_menu .drop-icon {
+  line-height: 1;
+  padding-left: 4px;
+}
+
+.sub-menu li a:hover {
+  color: var(--header-color) !important;
+}
+
+@media only screen and (min-width: 990px) {
+  #dropdown_menu .main-menu {
+    display: block;
+  }
+
+  #toggle-menu,
+  #dropdown_menu label.drop-icon {
+    display: none;
+  }
+
+  #dropdown_menu ul span.drop-icon {
+    display: inline-block;
+  }
+
+  #dropdown_menu li {
+    float: left;
+  }
+
+  #dropdown_menu .sub-menu li {
+    float: none;
+  }
+
+  #dropdown_menu .sub-menu {
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3000;
+  }
+
+  #dropdown_menu .sub-menu,
+  #dropdown_menu input[type="checkbox"]:checked + .sub-menu {
+    display: none;
+  }
+
+  #dropdown_menu .sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+  }
+
+  #dropdown_menu li:hover > input[type="checkbox"] + .sub-menu {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .nav_items .nav_item .nav_link {
     font-size: 0.9em;
