@@ -418,6 +418,73 @@
   width: 100%;
 }
 
+/* Date Picker Start */
+
+.date-picker-x {
+  background-color: var(--white) !important;
+  border: 1px solid var(--primary_color) !important;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.date-picker-x.active::before {
+  display: none;
+}
+
+.dpx-title {
+  font-family: var(--primary_font) !important;
+  color: var(--black) !important;
+  font-size: 1.4em !important;
+  text-transform: uppercase;
+}
+
+.dpx-prev,
+.dpx-next {
+  color: var(--primary_color) !important;
+}
+
+.dpx-title-box {
+  border: none !important;
+}
+
+.dpx-weekday.dpx-item {
+  font-family: var(--secondary_font) !important;
+  color: var(--primary_color) !important;
+  font-size: 1.1em;
+}
+
+.dpx-btns {
+  display: none !important;
+}
+
+.dpx-item {
+  font-family: var(--secondary_font) !important;
+  color: var(--black) !important;
+}
+
+.dpx-out.dpx-item {
+  color: #d2d2d2 !important;
+}
+
+.dpx-selected {
+  background-color: #d7a469 !important;
+  color: var(--white) !important;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.dpx-current {
+  border-color: var(--primary_color) !important;
+}
+
+/* Date Picker End */
+
 /* Reservation End */
 
 /* About Start */
