@@ -393,6 +393,93 @@
   .food_menu_content {
     flex-direction: column;
   }
+
+  .restaurrant_food_menu_pagination {
+    gap: 10px;
+  }
+
+  .restaurrant_food_menu_pagination a {
+    padding: 8px 15px;
+    font-size: 1em;
+  }
 }
 
 /* Menu Items End */
+
+/* Reservation Start */
+
+#reservation_cta {
+  background: url(../images/restaurent_reservation_bg.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.reservation_cta_content {
+  padding: 200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reservation_cta_content h1 {
+  font-family: var(--primary_font);
+  color: var(--white);
+  font-size: 3em;
+  word-spacing: 10px;
+}
+
+.reservation_cta_btn a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  border-top: 3px solid var(--primary_color);
+  border-bottom: 3px solid var(--primary_color);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 12px 20px;
+  color: var(--white);
+  text-align: center;
+  font-family: var(--secondary_font);
+  font-size: 1.1em;
+  border-radius: 8px 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.8s;
+}
+
+.reservation_cta_btn a:hover {
+  background-color: var(--primary_color);
+  color: var(--white);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+}
+
+@media screen and (max-width: 990px) {
+  .reservation_cta_content h1 {
+    font-size: 2em;
+  }
+
+  .reservation_cta_btn a {
+    padding: 12px 20px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reservation_cta_content {
+    padding: 120px 0;
+    flex-direction: column;
+  }
+
+  .reservation_cta_content h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .reservation_cta_btn a {
+    padding: 12px 20px;
+    font-size: 1em;
+  }
+}
+
+/* Reservation End */
