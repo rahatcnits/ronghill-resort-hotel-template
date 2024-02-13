@@ -362,7 +362,7 @@
   transform: translateY(-6px);
 }
 
-.restaurrant_food_menu_pagination {
+.pagination {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -370,7 +370,7 @@
   margin-top: 100px;
 }
 
-.restaurrant_food_menu_pagination a {
+.pagination a {
   display: inline-block;
   border: 2px solid var(--primary_color);
   padding: 10px 18px;
@@ -383,8 +383,8 @@
   transition: 0.5s;
 }
 
-.restaurrant_food_menu_pagination a.active,
-.restaurrant_food_menu_pagination a:hover {
+.pagination a.active,
+.pagination a:hover {
   background-color: var(--primary_color);
   color: var(--white);
 }
@@ -394,11 +394,11 @@
     flex-direction: column;
   }
 
-  .restaurrant_food_menu_pagination {
+  .pagination {
     gap: 10px;
   }
 
-  .restaurrant_food_menu_pagination a {
+  .pagination a {
     padding: 8px 15px;
     font-size: 1em;
   }

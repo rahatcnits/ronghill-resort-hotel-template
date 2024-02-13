@@ -112,154 +112,96 @@
 
 /* Hero End */
 
-/* Blog Start */
+/* Blog Single Start */
 
-#blog {
+#blog_single {
   padding: 100px 0;
 }
 
-.blog_header h3 {
-  font-family: var(--secondary_font);
-  font-size: 1.4em;
-  color: var(--black);
-  text-align: center;
-}
-
-.blog_header h1 {
-  font-family: var(--primary_font);
-  font-size: 3em;
-  word-spacing: 3px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.blog_header .header_shape {
-  width: 230px;
-  margin: 0 auto 20px;
-}
-
-.blog_header .header_shape img {
-  width: 100%;
-}
-
-.blog_content {
-  margin-top: 30px;
-}
-
-.blog_content img {
-  width: 100%;
-}
-
-.blog_content h4 {
-  font-size: 1.2em;
+.blog_single_head p {
+  font-size: 1em;
   font-family: var(--secondary_font);
   color: var(--primary_color);
 }
 
-.blog_content h2 {
+.blog_single_head h1 {
+  font-size: 2.5em;
+  font-family: var(--primary_font);
+  word-spacing: 4px;
+  background: var(--primary_gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog_single_img {
+  margin: 30px 0;
+}
+
+.blog_single_img img {
+  width: 100%;
+  aspect-ratio: 18/9;
+  border-radius: 10px 0;
+}
+
+.blog_single_content p {
+  font-family: var(--secondary_font);
+  color: var(--primary_color);
+}
+
+.blog_single_tags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.blog_single_tags h2 {
   font-size: 2em;
   font-family: var(--primary_font);
   word-spacing: 4px;
   background: var(--primary_gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 30px 0;
+  margin-right: 15px;
 }
 
-.blog_content p {
-  font-size: 1em;
-  font-family: var(--secondary_font);
-  color: var(--primary_color);
+.blog_single_tags h2 span {
+  font-family: sans-serif !important;
 }
 
-.blog_btn {
-  margin-top: 25px;
-}
-
-.blog_btn a {
-  text-decoration: none;
-  display: inline-block;
-  width: 160px;
-  border-left: 3px solid var(--primary_color);
-  border-right: 3px solid var(--primary_color);
-  background-color: var(--white);
-  padding: 9px 0;
-  color: var(--black);
-  text-align: center;
-  font-family: var(--secondary_font);
-  font-size: 1em;
-  border-radius: 8px 0;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  transition: all 0.8s;
-}
-
-.blog_btn a:hover {
-  background-color: var(--primary_color);
-  color: var(--white);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1),
-    0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  transform: translateY(-6px);
-}
-
-.pagination {
+.blog_single_tag_items {
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 100px;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
 }
 
-.pagination a {
-  display: inline-block;
-  border: 2px solid var(--primary_color);
-  padding: 10px 18px;
+.blog_single_tag_items li {
+  padding: 6px 12px;
   font-family: var(--secondary_font);
-  font-size: 1.1em;
   color: var(--black);
-  text-decoration: none;
-  font-weight: 500;
+  font-size: 1em;
+  border: 1px solid var(--primary_color);
+  cursor: pointer;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
-.pagination a.active,
-.pagination a:hover {
-  background-color: var(--primary_color);
+.blog_single_tag_items li:hover {
+  background: var(--primary_color);
   color: var(--white);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (max-width: 990px) {
-  .blog_header h3 {
-    font-size: 1.1em;
-  }
-
-  .blog_header h1 {
-    font-size: 2em;
-    margin-top: 10px;
-  }
-
-  .blog_header .header_shape {
-    width: 180px;
-    margin: 0 auto 0;
-  }
-
-  .blog_content h2 {
-    margin: 20px 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .pagination {
-    gap: 10px;
-  }
-
-  .pagination a {
-    padding: 8px 15px;
-    font-size: 1em;
-  }
-}
-
-/* Blog End */
+/* Blog Single End */

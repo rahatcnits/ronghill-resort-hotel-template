@@ -148,7 +148,7 @@
   display: none;
 }
 
-/* dropdown start */
+/* Dropdown Start */
 
 #dropdown_menu ul {
   margin: 0;
@@ -277,6 +277,8 @@
     display: block;
   }
 }
+
+/* Dropdown End */
 
 @media screen and (max-width: 1200px) {
   .nav_items .nav_item .nav_link {
