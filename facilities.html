@@ -7,7 +7,11 @@
     <title>Ronghill Resort & Hotel - Facilities</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.svg"
+      type="image/x-icon"
+    />
     <!-- Favicon -->
 
     <!-- CSS Link -->
@@ -75,13 +79,38 @@
               <li class="nav_item">
                 <a href="./restaurant.html" class="nav_link">RESTAURANT</a>
               </li>
-              <li class="nav_item">
-                <a href="./index.html" class="nav_link"
-                  >PAGES <i class="fa-solid fa-chevron-down"></i
-                ></a>
+
+              <li id="dropdown_menu">
+                <ul class="main-menu">
+                  <li class="nav_item">
+                    <a class="nav_link">
+                      <span class="drop-icon"
+                        >PAGES <i class="fa-solid fa-chevron-down"></i
+                      ></span>
+                      <label
+                        title="Toggle Drop-down"
+                        class="drop-icon"
+                        for="sm1"
+                        >PAGES<i class="fa-solid fa-chevron-down"></i
+                      ></label>
+                    </a>
+                    <input type="checkbox" id="sm1" />
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="./about.html">ABOUT US</a>
+                      </li>
+                      <li><a href="#">GALLERY</a></li>
+                      <li><a href="./blog.html">BLOG</a></li>
+                      <li><a href="#">PRIVACY PILICY</a></li>
+                      <li><a href="#">TURM AND CONDITION</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
+
               <li class="nav_item">
-                <a href="./index.html" class="nav_link">CONTACT US</a>
+                <a href="./contact.html" class="nav_link">CONTACT US</a>
               </li>
             </ul>
           </div>

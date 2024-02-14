@@ -7,7 +7,11 @@
     <title>Ronghill Resort & Hotel - Home</title>
 
     <!-- Favicon Start -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.svg"
+      type="image/x-icon"
+    />
     <!-- Favicon End -->
 
     <!-- CSS Start -->
@@ -58,13 +62,38 @@
               <li class="nav_item">
                 <a href="./restaurant.html" class="nav_link">RESTAURANT</a>
               </li>
-              <li class="nav_item">
-                <a href="./index.html" class="nav_link"
-                  >PAGES <i class="fa-solid fa-chevron-down"></i
-                ></a>
+
+              <li id="dropdown_menu">
+                <ul class="main-menu">
+                  <li class="nav_item">
+                    <a class="nav_link active">
+                      <span class="drop-icon"
+                        >PAGES <i class="fa-solid fa-chevron-down"></i
+                      ></span>
+                      <label
+                        title="Toggle Drop-down"
+                        class="drop-icon"
+                        for="sm1"
+                        >PAGES<i class="fa-solid fa-chevron-down"></i
+                      ></label>
+                    </a>
+                    <input type="checkbox" id="sm1" />
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="./about.html">ABOUT US</a>
+                      </li>
+                      <li><a href="#">GALLERY</a></li>
+                      <li><a href="./blog.html" class="active">BLOG</a></li>
+                      <li><a href="#">PRIVACY PILICY</a></li>
+                      <li><a href="#">TURM AND CONDITION</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
+
               <li class="nav_item">
-                <a href="./index.html" class="nav_link">CONTACT US</a>
+                <a href="./contact.html" class="nav_link">CONTACT US</a>
               </li>
             </ul>
           </div>
@@ -149,7 +178,71 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="recent_blog_head">
-              <h1>Recent Blogs:</h1>
+              <h1>Recent Blogs<span>:</span></h1>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="recent_blog_cards">
+              <div class="recent_blog_card_img">
+                <img src="./assets/images/recent_blog_img_1.png" alt="" />
+                <div class="recent_blog_card_overlay">
+                  <a class="recent_blog_btn" href="#">READ MORE</a>
+                </div>
+              </div>
+
+              <div class="recent_blog_card_content">
+                <p>01 May, 2023</p>
+                <h2>See the Mountain.</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="recent_blog_cards">
+              <div class="recent_blog_card_img">
+                <img src="./assets/images/recent_blog_img_2.png" alt="" />
+                <div class="recent_blog_card_overlay">
+                  <a class="recent_blog_btn" href="#">READ MORE</a>
+                </div>
+              </div>
+
+              <div class="recent_blog_card_content">
+                <p>01 May, 2023</p>
+                <h2>Welcome to Restaurant</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="recent_blog_cards">
+              <div class="recent_blog_card_img">
+                <img src="./assets/images/recent_blog_img_3.png" alt="" />
+                <div class="recent_blog_card_overlay">
+                  <a class="recent_blog_btn" href="#">READ MORE</a>
+                </div>
+              </div>
+
+              <div class="recent_blog_card_content">
+                <p>01 May, 2023</p>
+                <h2>Special day in Rong Hill</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="recent_blog_cards">
+              <div class="recent_blog_card_img">
+                <img src="./assets/images/recent_blog_img_4.png" alt="" />
+                <div class="recent_blog_card_overlay">
+                  <a class="recent_blog_btn" href="#">READ MORE</a>
+                </div>
+              </div>
+
+              <div class="recent_blog_card_content">
+                <p>01 May, 2023</p>
+                <h2>Travel in Mountain.</h2>
+              </div>
             </div>
           </div>
         </div>

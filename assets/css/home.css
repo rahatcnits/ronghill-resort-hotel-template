@@ -30,67 +30,6 @@
 
 /* universal */
 
-/* hero start */
-/* 
-.hero_content {
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero_content .hero_sub_header {
-  font-family: var(--secondary_font);
-  padding: 5px 20px;
-  color: var(--white);
-  font-size: 1.2em;
-  display: inline-block;
-  border-top: 4px solid var(--primary_color);
-  border-bottom: 4px solid var(--primary_color);
-  border-radius: 15px 0;
-  margin-bottom: 40px;
-}
-
-.hero_content .hero_header {
-  font-family: var(--primary_font);
-  font-size: 4em;
-  color: var(--white);
-  line-height: 90px;
-  word-spacing: 18px;
-}
-
-.hero_content .hero_btn {
-  margin-top: 30px;
-}
-
-.hero_content .hero_btn a {
-  text-decoration: none;
-  font-size: 1.2em;
-  font-family: var(--secondary_font);
-  color: var(--white);
-  background-color: var(--primary_color);
-  width: 220px;
-  display: inline-block;
-  text-align: center;
-  padding: 13px 0;
-  border-radius: 10px 0;
-  transition: 0.5s;
-}
-
-.hero_content .hero_btn a .hero_btn_icon {
-  width: 22px;
-  margin-left: 4px;
-  transition: 0.5s;
-}
-
-.hero_content .hero_btn a:hover .hero_btn_icon {
-  transform: translateX(6px);
-} */
-
-/* hero end */
-
 /* Hero Slider Start */
 
 #hero {
