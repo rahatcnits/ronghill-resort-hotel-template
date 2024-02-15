@@ -264,31 +264,40 @@
   outline-offset: 4px !important;
 }
 
-@media screen and (max-width: 990px) {
-  .hero_content h1 {
+@media screen and (max-width: 1200px) {
+  .hero_content .hero_header {
     font-size: 3em;
+    line-height: 70px;
+    word-spacing: 12px;
   }
 
-  .hero_content p {
-    font-family: var(--secondary_font);
-    font-size: 1em;
-    color: var(--white);
-    max-width: 600px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    padding: 20px;
-    border-radius: 10px;
-    transform: translateX(60px);
-    -webkit-transform: translateX(60px);
-    -moz-transform: translateX(60px);
-    -ms-transform: translateX(60px);
-    -o-transform: translateX(60px);
-    transition: 0.6s ease;
-    -webkit-transition: 0.6s ease;
-    -moz-transition: 0.6s ease;
-    -ms-transition: 0.6s ease;
-    -o-transition: 0.6s ease;
-    opacity: 0;
+  .hero_content .hero_sub_header {
+    padding: 5px 20px;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .hero_content .hero_header {
+    font-size: 2.2em;
+    line-height: 50px;
+    word-spacing: 10px;
+  }
+
+  .hero_content .hero_sub_header {
+    padding: 5px 20px;
+    font-size: 0.9em;
+  }
+
+  .hero_content .hero_btn a {
+    font-size: 0.9em;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-pagination {
+    display: none;
   }
 }
 
