@@ -646,9 +646,7 @@
   font-family: var(--primary_font);
   font-size: 3em;
   word-spacing: 3px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
   text-align: center;
   margin-top: 20px;
 }
@@ -671,9 +669,7 @@
   font-family: var(--primary_font);
   font-size: 2em;
   word-spacing: 3px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
   text-align: center;
   text-transform: uppercase;
 }
@@ -768,9 +764,7 @@
   font-family: var(--primary_font);
   font-size: 3em;
   word-spacing: 3px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
   text-align: center;
   margin-top: 20px;
 }
@@ -825,9 +819,7 @@
   font-family: var(--primary_font);
   font-size: 2em;
   word-spacing: 3px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
   text-align: center;
   word-spacing: 10px;
   margin: 30px 0 0;
@@ -936,9 +928,7 @@
   font-family: var(--primary_font);
   font-size: 3em;
   word-spacing: 3px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
   text-align: center;
   margin-top: 20px;
 }
@@ -1405,9 +1395,7 @@
   font-family: var(--primary_font);
   font-size: 3em;
   word-spacing: 3px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
   text-align: center;
   margin-top: 20px;
 }
@@ -1554,9 +1542,7 @@
   font-family: var(--primary_font);
   font-size: 3em;
   word-spacing: 3px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
   text-align: center;
   margin-top: 20px;
 }
@@ -1588,9 +1574,7 @@
   font-size: 2em;
   font-family: var(--primary_font);
   word-spacing: 4px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
   margin: 30px 0;
 }
 
@@ -1668,9 +1652,7 @@
   font-family: var(--primary_font);
   font-size: 3em;
   word-spacing: 3px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
   text-align: center;
   margin-top: 20px;
 }
@@ -1759,9 +1741,7 @@
   font-family: var(--primary_font);
   font-size: 1.8em;
   word-spacing: 3px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
   text-align: center;
 }
 
@@ -1863,9 +1843,7 @@
   font-family: var(--primary_font);
   font-size: 3em;
   word-spacing: 3px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
   text-align: center;
   margin-top: 20px;
 }
@@ -1967,9 +1945,7 @@
   font-family: var(--primary_font);
   font-size: 2em;
   word-spacing: 2px;
-  background: var(--primary_gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--black);
 }
 
 .client .client_info p {
