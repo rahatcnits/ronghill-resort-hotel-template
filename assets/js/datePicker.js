@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   $min.DatePickerX.init({
     mondayFirst: true,
-    minDate: new Date(2021, 5, 9),
+    minDate: new Date(2000, 5, 9),
     maxDate: $max,
   });
 
@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function () {
     minDate: $min,
     maxDate: function () {
       var date = new Date();
-      return new Date().setDate(date.getDate() + 30);
+      return new Date().setDate(date.getDate() * 365);
     },
     clearButton: false,
   });
